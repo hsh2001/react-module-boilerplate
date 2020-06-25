@@ -6,7 +6,9 @@ interface IProps {
 
 const SampleComponent = (props: IProps) => {
   const { text } = props;
-  return <div style={{ backgroundColor: 'black', color: "white" }}>Hello {text}</div>
-}
+  return (
+    <div style={{ backgroundColor: 'black', color: 'white' }}>Hello {text}</div>
+  );
+};
 
 export default SampleComponent;
